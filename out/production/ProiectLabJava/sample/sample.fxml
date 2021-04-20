@@ -1,0 +1,75 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<BorderPane fx:id="mainBorderPane" fx:controller="sample.Controller" xmlns:fx="http://javafx.com/fxml" >
+
+    <top>
+        <VBox>
+            <MenuBar>
+                <Menu text="File">
+                    <MenuItem text="Exit" onAction="#handleExit"/>
+                    <MenuItem text="Save As .TSV" onAction="#handleSaveAs"/>
+                </Menu>
+                <Menu text="Help">
+                    <MenuItem text="About" onAction="#handleAbout"/>
+                </Menu>
+            </MenuBar>
+            <ToolBar>
+                <HBox>
+                    <Button text="New..." onAction="#showNewMovieDialog">
+                        <tooltip>
+                            <Tooltip text="Add a New Movie"/>
+                        </tooltip>
+                    </Button>
+                    <ToggleButton fx:id="sortToggleButton" text="Sortare" onAction="#handleSortButton" >
+                        <tooltip>
+                            <Tooltip text="Apasat: Sortare dupa an --- Neapasat: Sortare dupa nume"/>
+                        </tooltip>
+                    </ToggleButton>
+                    <TextField fx:id="searchField"/>
+                    <Button text="Search" onAction="#handleSearchButton"/>
+                </HBox>
+            </ToolBar>
+        </VBox>
+    </top>
+
+    <left>
+        <ListView fx:id="movieItemListView">
+
+        </ListView>
+    </left>
+
+    <center>
+        <VBox style="-fx-background-color:white">
+            <HBox>
+                <Label text="Actori: " style="-fx-background-color:white">
+                    <font>
+                        <Font name="Times New Roman bold" size="20"/>
+                    </font>
+                </Label>
+                <Label fx:id="actoriLabel" style="-fx-background-color:white">
+                    <font>
+                        <Font name="Times New Roman bold" size="20"/>
+                    </font>
+                </Label>
+            </HBox>
+            <TextArea fx:id="movieDetailsTextArea" VBox.vgrow="ALWAYS" wrapText="true" editable="false"/>
+            <HBox>
+                <Label text="Data aparitie: " style="-fx-background-color:white">
+                    <font>
+                        <Font name="Times New Roman bold" size="20"/>
+                    </font>
+                </Label>
+                <Label fx:id="dataAparitieLabel" style="-fx-background-color:white">
+                    <font>
+                        <Font name="Times New Roman bold" size="20"/>
+                    </font>
+                </Label>
+            </HBox>
+        </VBox>
+    </center>
+
+
+
+</BorderPane>
+

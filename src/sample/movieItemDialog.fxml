@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<DialogPane xmlns:fx="http://javafx.com/fxml" fx:controller="sample.DialogController">
+
+    <headerText>
+        Completati campurile si apasati "OK".
+    </headerText>
+
+    <content>
+        <GridPane vgap="10" hgap="10">
+            <Label text="Numele Filmului: " GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+            <TextField fx:id="numeField" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+            <Label text="Data Lansarii: " GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+            <TextField fx:id="anField" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+            <Label text="Actori: " GridPane.columnIndex="0"  GridPane.rowIndex="4"/>
+            <TextField fx:id="actoriField" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+            <Label text="Descriere Film: " GridPane.columnIndex="0" GridPane.rowIndex="6"/>
+            <TextArea fx:id="descriereField" GridPane.rowIndex="7" GridPane.columnIndex="0" wrapText="true"/>
+        </GridPane>
+    </content>
+</DialogPane>

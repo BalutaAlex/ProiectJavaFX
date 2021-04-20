@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.Label?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            prefHeight="500.0" prefWidth="700.0"
+            style=  "-fx-background-image: url(https://englishdepartment.linguaculture.ro/images/Foto/siglaULBSalb.jpg);
+                    -fx-background-repeat: stretch;
+                    -fx-background-size: 700 500;
+                    -fx-background-position: center center;">
+</AnchorPane>
